@@ -85,6 +85,7 @@ def visualize_network():
         )
 
     # Labels and legend
+    plt.legend(['Legend'], loc='upper left')
     nx.draw_networkx_labels(G, pos, ax=ax)
     legend_elements = [
         Circle(0, color='skyblue', label='Junction'),
